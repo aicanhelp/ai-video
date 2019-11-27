@@ -4,3 +4,9 @@
 [submodule "ijkplayer"]
 	path = ijkplayer
 	url = https://github.com/bilibili/ijkplayer.git
+[submodule "srs"]
+	path = srs
+	url = https://github.com/ossrs/srs.git
+[submodule "srs-docker"]
+	path = srs-docker
+	url = https://github.com/ossrs/srs-docker.git
