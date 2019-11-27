@@ -10,3 +10,6 @@
 [submodule "srs-docker"]
 	path = srs-docker
 	url = https://github.com/ossrs/srs-docker.git
+[submodule "jitsi-meet"]
+	path = jitsi-meet
+	url = https://github.com/jitsi/jitsi-meet.git
