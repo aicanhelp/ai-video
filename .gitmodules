@@ -1,0 +1,6 @@
+[submodule "yasea"]
+	path = yasea
+	url = https://github.com/begeekmyfriend/yasea.git
+[submodule "ijkplayer"]
+	path = ijkplayer
+	url = https://github.com/bilibili/ijkplayer.git
