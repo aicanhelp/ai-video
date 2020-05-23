@@ -1,15 +1,15 @@
 [submodule "yasea"]
-	path = yasea
+	path = resources/yasea
 	url = https://github.com/begeekmyfriend/yasea.git
 [submodule "ijkplayer"]
-	path = ijkplayer
+	path = resources/ijkplayer
 	url = https://github.com/bilibili/ijkplayer.git
 [submodule "srs"]
-	path = srs
+	path = resources/srs
 	url = https://github.com/ossrs/srs.git
 [submodule "srs-docker"]
-	path = srs-docker
+	path = resources/srs-docker
 	url = https://github.com/ossrs/srs-docker.git
 [submodule "jitsi-meet"]
-	path = jitsi-meet
+	path = resources/jitsi-meet
 	url = https://github.com/jitsi/jitsi-meet.git
