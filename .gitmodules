@@ -13,3 +13,39 @@
 [submodule "jitsi-meet"]
 	path = resources/jitsi-meet
 	url = https://github.com/jitsi/jitsi-meet.git
+[submodule "resources/red5/red5-server"]
+	path = resources/red5/red5-server
+	url = https://github.com/Red5/red5-server.git
+[submodule "resources/red5/red5-parent"]
+	path = resources/red5/red5-parent
+	url = https://github.com/Red5/red5-parent.git
+[submodule "resources/red5/red5-server-common"]
+	path = resources/red5/red5-server-common
+	url = https://github.com/Red5/red5-server-common.git
+[submodule "resources/red5/red5-service"]
+	path = resources/red5/red5-service
+	url = https://github.com/Red5/red5-service.git
+[submodule "resources/red5/red5-io"]
+	path = resources/red5/red5-io
+	url = https://github.com/Red5/red5-io.git
+[submodule "resources/obs-studio"]
+	path = resources/obs-studio
+	url = https://github.com/obsproject/obs-studio.git
+[submodule "resources/shaka-packager"]
+	path = resources/shaka-packager
+	url = https://github.com/google/shaka-packager.git
+[submodule "resources/streama"]
+	path = resources/streama
+	url = https://github.com/streamaserver/streama.git
+[submodule "resources/gstreamer-java"]
+	path = resources/gstreamer-java
+	url = https://github.com/gstreamer-java/gst1-java-core.git
+[submodule "resources/vlc"]
+	path = resources/vlc
+	url = https://github.com/videolan/vlc.git
+[submodule "resources/go-sdl2"]
+	path = resources/go-sdl2
+	url = https://github.com/veandco/go-sdl2.git
+[submodule "resources/EasyDarwin"]
+	path = resources/EasyDarwin
+	url = https://github.com/EasyDarwin/EasyDarwin.git

@@ -1,0 +1,217 @@
+= Restcomm RCML – SIP
+
+[[sip]]
+== SIP
+The *<Sip>* noun specifies a SIP URI to dial. You can use multiple <Sip> nouns within a <Dial> verb to simultaneously attempt a connection with many user agents at once. The first user agent to accept the incoming connection is connected to the call and the other connection attempts are canceled. 
+
+The Dial verb's Sip noun lets you set up VoIP sessions by using SIP -- Session Initiation Protocol. With this feature, you can send a call to any SIP endpoint. Set up your RCML to use the Sip noun within the Dial verb. 
+
+Currently, only one Sip noun may be specified per Dial, and the INVITE message may be sent to only one SIP endpoint. Also, you cannot add any other nouns (eg Number, Client) in the same Dial as the SIP. If you want to use another noun, set up a callback on the Dial to use alternate methods .
+
+[[attributes]]
+=== Noun Attributes
+
+The `<Sip>` noun supports the following attributes that modify its behavior:
+
+[cols=",,",options="header",]
+|==========================================================================
+|Attribute Name |Allowed Values |Default Value
+|url |any url |none
+|method |`GET`, `POST` |`POST`
+|statusCallbackEvent |`initiated`, `ringing`, `answered`, `completed` |none
+|statusCallback |any url |none
+|statusCallbackMethod |`GET`, `POST` |`POST`
+|==========================================================================
+
+==== url
+
+The 'url' attribute allows you to specify a url for a RCML document that will run on the called party's end, after she answers, but before the parties are connected. You can use this RCML to privately play or say information to the called party, or provide a chance to decline the phone call using <Gather> and <Hangup>. The current caller will continue to hear ringing while the RCML document executes on the other end. RCML documents executed in this manner are not allowed to contain the <Dial> verb. method
+
+==== method
+
+The 'method' attribute allows you to specify which HTTP method Restcomm should use when requesting the URL in the 'url' attribute. The default is POST.
+
+==== statusCallbackEvent
+
+When dialing out to a SIP URI using <Dial>, an outbound call is initiated. The call transitions from the initiated state to the ringing state when the phone starts ringing. It transitions to the answered state when the call is picked up, and finally to the completed state when the call is over. With **statusCallbackEvent**, you can subscribe to receive webhooks for the different call progress events: initiated, ringing, answered, or completed for a given call.
+
+The *statusCallbackEvent* attribute allows you to specify which events Restcomm should webhook on. To specify multiple events separate them with a space: initiated ringing answered completed. If a statusCallback is provided and no status callback events are specified the completed event will be sent by default.
+
+As opposed to creating an outbound call via the API, outbound calls created using <Dial> are initiated right away and never queued. The following shows a timeline of possible call events that can be returned and the different call statuses that a <Dial> leg may experience:
+
+The *<Sip>* noun specifies a sip uri to dial. You can use multiple *<Sip>* nouns within a *<Dial>* verb to simultaneously attempt a connection with many sip uris at once. The first sip uri to accept the incoming connection is connected to the call and the other connection attempts are canceled.  
+
+image::images/status-callback-events-dial.png[Outbound Dial call events diagram]
+
+[cols=",",options="header",]
+|==============================================================================================================================================================================================================================================================
+|Event |Description
+|initiated |The `initiated` event is fired when Restcomm starts dialing the call.
+|ringing |The `ringing` event is fired when the call starts ringing.
+|answered |The `answered` event is fired when the call is answered.
+|completed |The `completed` event is fired when the call is completed regardless of the termination status: `busy`, `canceled`, `completed`, `failed`, or `no-answer`. If no `statusCallbackEvent` is specified, `completed` will be fired by default.
+|==============================================================================================================================================================================================================================================================
+
+[[attributes-status-callback]]
+==== statusCallback
+
+The *statusCallback* attribute allows you to specify a URL for Restcomm to send webhook requests to on each event specified in the statusCallbackEvent attribute.
+
+==== statusCallbackMethod
+
+The *statusCallbackMethod* attribute allows you to specify which HTTP method Restcomm should use when requesting the URL in the statusCallback attribute. The default is POST.
+
+==== Status Callback HTTP Parameters
+
+The parameters Restcomm passes to your application in its asynchronous request to the StatusCallback URL include all parameters passed in a synchronous request to retrieve RCML when Restcomm receives a call to one of your Restcomm numbers. The full list of parameters and descriptions of each are in the RCML Voice Request documentation.
+
+When the call progress events are fired, the Status Callback request also passes these additional parameters:
+
+[cols=",",options="header",]
+|===================================================================================================================================================================================================================================================================
+|Parameter |Description
+|CallSid |A unique identifier for this call, generated by Restcomm. You can use the `CallSid` to modify the child call by POSTing to Calls/\{CallSid} with a new RCML URL.
+|CallStatus |A descriptive status for the call. The value is one of **`queued`**, **`initiated`**, **`ringing`**, **`in-progress`**, **`busy`**, **`failed`**, or **`no-answer`**. See the CallStatus section for more details.
+|CallDuration |The duration in seconds of the just-completed call. Only present in the `completed` event.
+//|RecordingUrl |The URL of the phone call's recorded //audio. This parameter is included only if //*`Record=true`* is set on the REST API request and //does not include recordings from `<Dial>` or //`<Record>`. *`RecordingUrl`* is only present in the //`completed` event.
+//|RecordingSid |The unique ID of the Recording from //this call. `RecordingSid` is only present in the //`completed` event.
+//|RecordingDuration |The duration of the recorded //audio (in seconds). `RecordingDuration` is only //present in the `completed` event.
+|Timestamp |The timestamp when the event was fired, given as UTC in http://php.net/manual/en/class.datetime.php#datetime.constants.rfc2822[RFC 2822] format.
+|CallbackSource |A string that describes the source of the webhook. This is provided to help disambiguate why the webhook was made. On Status Callbacks, this value is always *`call-progress-events`.*
+|SequenceNumber |The order in which the events were fired, starting from `0`. Although events are fired in order, they are made as separate HTTP requests and there is no guarantee they will arrive in the same order.
+|===================================================================================================================================================================================================================================================================
+
+
+=== Examples
+For an example of how to use the <Sip> noun see below.
+
+----
+<Response>
+    <Dial>
+    <Sip>sip:alice@127.0.0.1:5080</Sip>
+    </Dial>
+</Response>
+----
+
+=== Authentication
+
+Send username and password attributes for authentication to your SIP infrastructure as attributes on the Sip noun.
+
+==== Request Parameters
+
+[cols=",",options="header",]
+|==========================================
+|Attribute Name |Values
+|username |Username for SIP authentication.
+|password |Password for SIP authentication
+|==========================================
+
+=== Authentication Example
+
+----
+<Response>
+    <Dial>
+    <Sip username="alice" password="secret">sip:alice@example.com</Sip>
+    </Dial>
+</Response>
+----
+
+=== Custom headers
+
+Send custom headers by appending them to the SIP URI -- just as you'd pass headers in a URI over HTTP. For example:
+
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial>
+        <Sip>
+        sip:alice@example.com?mycustomheader=tata&myotherheader=toto
+        </Sip>
+    </Dial>
+</Response>
+----
+
+=== Character Limit
+
+While the SIP URI itself must be under 255 chars, the headers must be under 1024 characters.
+
+=== Transport
+
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial>
+        <Sip>
+        sip:alice@example.com;transport=tcp
+        </Sip>
+    </Dial>
+</Response>
+----
+
+Set a parameter on your SIP URI to specify what transport protocol you want to use. Currently, this is limited to TCP and UDP. By default, Restcomm sends your SIP INVITE over UDP. Change this by using the transport parameter:
+
+=== Attributes
+
+==== Request Parameters
+
+[cols=",,",options="header",]
+|=============================================
+|Attribute Name |Allowed Values |Default Value
+|url |call screening url. |none.
+|method |GET, POST |POST
+|=============================================
+
+The url attribute allows you to specify a url for a RCML document that runs on the called party's end, after they answer, but before the two parties are connected. You can use this RCML to privately Play or Say information to the called party, or provide a chance to decline the phone call using Gather and Hangup. The current caller continues to hear ringing while the RCML document executes on the other end. RCML documents executed in this manner cannot contain the Dial verb.
+
+===== method
+The method attribute allows you to specify which HTTP method Restcomm should use when requesting the URL specified in the url attribute. The default is POST.
+
+===== Call Screening HTTP parameters
+When a call is answered, Restcomm passes the following parameters with its request to your screening URL (in addition to the standard RCML Voice request parameters):
+
+====== Request Parameters
+
+[cols=",",options="header",]
+|==================================================================================================
+|Attribute Name |Values
+|SipCallId |The SIP call ID header of the request made to the remote SIP infrastructure.
+|SipHeader |The name/value of any X-headers returned in the 200 response to the SIP INVITE request.
+|==================================================================================================
+
+
+==== Dial Action HTTP parameters
+
+Use the action callback parameters to modify your application based on the results of the SIP dial attempt:
+
+===== Request Parameters
+
+[cols=",",options="header",]
+|=========================================================================================================
+|Attribute Name |Values
+|DialSipCallId |The SIP call ID header of the request made to the remote SIP infrastructure.
+|DialSipResponseCode |The SIP response code as a result of the INVITE attempt.
+|DialSipHeader_ |The name/value of any X-headers returned in the final response to the SIP INVITE request.
+|=========================================================================================================
+
+==== Dial with Multiple Examples.
+
+A more complex Dial, specifying custom settings as attributes on Dial, including call screening and setting the protocol to TCP.
+
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial
+        record="true"
+        timeout="10"
+        hangupOnStar="true"
+        callerId="bob"
+        method="POST"
+        action="/handle_post_dial">
+            <Sip
+                method="POST"
+                url="/handle_screening_on_answer">
+                sip:alice@example.com?customheader=foo
+            </Sip>
+    </Dial>
+</Response>
+----

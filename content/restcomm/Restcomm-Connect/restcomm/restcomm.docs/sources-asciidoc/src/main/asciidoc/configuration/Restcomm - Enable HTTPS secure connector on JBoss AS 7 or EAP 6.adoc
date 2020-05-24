@@ -1,0 +1,148 @@
+The configuration guide will show you how to create a keystore and activate SSL for HTTPS connection.
+
+
+[[enable-https-secure-connector]]
+Enable HTTPs Secure Connector
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By default, Restcomm uses port 8080 for HTTP connector. The following instruction will guide you through the steps required to configure SSL and enable HTTPS.
+
+Make sure you are testing using the latest Restcomm. 
+
+
+[[step-1]]
+Step 1 - Keystore by Certificate Authority (CA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If you will be using a self-signed certificate, you may skip the step and go to Step 2
+
+If you are using a Certificate Authority (CA), create the keystore as instructed by the CA provider and copy the keystore to $RESTCOMM_HOME/standalone/configuration/ directory. 
+Next, go to step 3.
+
+Here is a link for a free Certificate Authority (CA). https://letsencrypt.org/
+
+
+[[step-2]]
+Step 2 - Self-signed Certificate Keystore
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+
+
+To create a self-signed certificate keystore, perform the following steps:
+
+[source,lang:default,decode:true]
+----
+$JAVA_HOME/bin/keytool -genkey -alias restcomm -keyalg RSA -keystore  restcomm.jks
+----
+
+For this example, we shall use the password, "changeit". 
+
+Also make sure that for first and last name (CN) you provide the hostname of the machine running Restcomm. Running the command should look like this:
+
+[source,lang:default,decode:true]
+----
+Enter keystore password: changeit
+Re-enter new password: changeit
+What is your first and last name?
+[Unknown]: HOSTNAME_HERE
+What is the name of your organizational unit?
+[Unknown]:
+What is the name of your organization?
+[Unknown]:
+What is the name of your City or Locality?
+[Unknown]:
+What is the name of your State or Province?
+[Unknown]:
+What is the two-letter country code for this unit?
+[Unknown]:
+Is CN=HOSTNAME_HERE, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown correct?
+[no]: yes
+
+Enter key password for <restcomm>
+(RETURN if same as keystore password): {JUST PRESS RETURN}
+----
+
+* HOSTNAME : Must match content of the  "/etc/hostname or /etc/hosts" file. 
+
+Copy the generated self-signed keystore restcomm.jks to the configuration directory as shown below
+
+[source,lang:default,decode:true]
+----
+$RESTCOMM_HOME/standalone/configuration/restcomm.jks
+----
+
+
+[[step-3]]
+Step 3 - Configure Restcomm Configuration Files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[source,lang:default,decode:true]
+----
+$RESTCOMM_HOME/bin/restcomm/advanced.conf
+----
+
+
+[source,lang:default,decode:true]
+----
+
+#Allowed values FALSE, SELF, AUTH.
+#If SELF set self-signed certificate will be created.
+#If AUTH, Authorized certificate will be used.Need to place the certificate at "$RESTCOMM_HOME/standalone/configuration/"
+#To Disable use 'FALSE'
+SECURESSL=SELF
+
+#HTTPS Settings
+DISABLE_HTTP='false' #Control whether or not HTTP connector will be disabled. Values: true=HTTP connector will be disable, false=HTTP Connector will not be disabled, REDIRECT= http -> https redirection will be enabled (For CLI RestAPI requests when redirect is active https needs to be used).
+TRUSTSTORE_FILE='restcomm.jks' #File should be located at $RESTCOMM_HOME/standalone/configuration folder. Provide just the name of the trustore file. Leave it blank to disable HTTPS
+TRUSTSTORE_PASSWORD='changeit' #Password for the trustore file
+TRUSTSTORE_ALIAS='restcomm' #The certificate alias
+
+----
+
+If you are using a self-signed certificate, change the SSL_MODE value to SSL_MODE='allowall'
+[source,lang:default,decode:true]
+----
+SSL_MODE='allowall' #Control whether or not Restcomm will accept self-signed certificates. Values allowall=allow self-signed certificates, strict=don't allow self signed certificates
+----
+
+Go to the Restcomm Admin UI at the following URL
+
+[source,lang:default,decode:true]
+----
+https://RESTCOMM_IP_ADDRESS:8443/
+----
+
+If you want to access HTTPS using the default port 443 instead of Restcomm' default 8443, change the following options in the $RESTCOMM_HOME/bin/restcomm/restcomm.conf file.
+
+[source,lang:default,decode:true]
+----
+#RestComm PORT configuration
+HTTP_PORT='8080' #Port used for HTTP. Default 8080
+HTTPS_PORT='8443' #Port used for HTTPS. Default 8443
+
+----
+
+Restcomm will now be accessible using the following URL : https://RESTCOMM_IP_ADDRESS/
+
+
+[[exception-download-rcml]]
+Error - Exception while trying to download RCML
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you get the above message in the Restcomm server logs when making a call with HTTPS activated, you need to modify the restcomm.conf file by updating the following parameter:
+
+[source,lang:default,decode:true]
+----
+#hostname of the server to be used at restcomm.xml. If not set the STATIC_ADDRESS will be used.
+RESTCOMM_HOSTNAME='YOUR_HOST_NAME'
+
+----
+
+
+The above hostname must match the one in the /etc/hosts file and must also be the same hostname in your SSL certificate.
+
+
+
+For any questions or suggestions, please use the following channels:
+
+* Restcomm forum: https://groups.google.com/forum/#!forum/restcomm
+* Stack Overflow: http://stackoverflow.com/questions/tagged/restcomm (remember to tag your questions with 'restcomm')
+* Gitter #Restcomm-Discuss channel at https://gitter.im/RestComm/Restcomm-discuss
