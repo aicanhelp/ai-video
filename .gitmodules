@@ -49,3 +49,6 @@
 [submodule "resources/EasyDarwin"]
 	path = resources/EasyDarwin
 	url = https://github.com/EasyDarwin/EasyDarwin.git
+[submodule "resources/x264-go"]
+	path = resources/x264-go
+	url = https://github.com/gen2brain/x264-go.git
