@@ -61,3 +61,33 @@
 [submodule "resources/srs/srs-docker"]
 	path = resources/srs/srs-docker
 	url = https://github.com/ossrs/srs-docker.git
+[submodule "resources/x264"]
+	path = resources/x264
+	url = https://gitee.com/aimo-video/x264.git
+[submodule "resources/x265"]
+	path = resources/x265
+	url = https://gitee.com/aimo-video/x265.git
+[submodule "resources/gots"]
+	path = resources/gots
+	url = https://gitee.com/aimo-video/gots.git
+[submodule "resources/acc-go"]
+	path = resources/acc-go
+	url = https://gitee.com/aimo-video/aac-go.git
+[submodule "resources/voctomix"]
+	path = resources/voctomix
+	url = https://gitee.com/aimo-video/voctomix.git
+[submodule "resources/gstreamer-rs"]
+	path = resources/gstreamer-rs
+	url = https://gitee.com/aimo-video/gstreamer-rs.git
+[submodule "resources/gstreamer"]
+	path = resources/gstreamer
+	url = https://gitee.com/aimo-video/gstreamer.git
+[submodule "resources/ffmpeg"]
+	path = resources/ffmpeg
+	url = https://gitee.com/aimo-video/FFmpeg.git
+[submodule "resources/gst-example"]
+	path = resources/gst-example
+	url = https://gitee.com/aimo-video/gst-examples.git
+[submodule "resources/red5/red5-plugins"]
+	path = resources/red5/red5-plugins
+	url = https://github.com/Red5/red5-plugins.git
