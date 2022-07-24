@@ -63,31 +63,52 @@
 	url = https://github.com/ossrs/srs-docker.git
 [submodule "resources/x264"]
 	path = resources/x264
-	url = https://gitee.com/aimo-video/x264.git
+	url = https://github.com/mirror/x264
 [submodule "resources/x265"]
 	path = resources/x265
-	url = https://gitee.com/aimo-video/x265.git
+	url = https://github.com/videolan/x265
 [submodule "resources/gots"]
 	path = resources/gots
-	url = https://gitee.com/aimo-video/gots.git
+	url = https://github.com/Comcast/gots
 [submodule "resources/acc-go"]
 	path = resources/acc-go
-	url = https://gitee.com/aimo-video/aac-go.git
+	url = https://github.com/gen2brain/aac-go
 [submodule "resources/voctomix"]
 	path = resources/voctomix
-	url = https://gitee.com/aimo-video/voctomix.git
+	url = https://github.com/voc/voctomix
 [submodule "resources/gstreamer-rs"]
 	path = resources/gstreamer-rs
-	url = https://gitee.com/aimo-video/gstreamer-rs.git
+	url = https://github.com/sdroege/gstreamer-rs
 [submodule "resources/gstreamer"]
 	path = resources/gstreamer
-	url = https://gitee.com/aimo-video/gstreamer.git
+	url = https://github.com/GStreamer/gstreamer
 [submodule "resources/ffmpeg"]
 	path = resources/ffmpeg
-	url = https://gitee.com/aimo-video/FFmpeg.git
+	url = https://github.com/FFmpeg/FFmpeg
 [submodule "resources/gst-example"]
 	path = resources/gst-example
-	url = https://gitee.com/aimo-video/gst-examples.git
+	url = https://github.com/GStreamer/gst-examples
 [submodule "resources/red5/red5-plugins"]
 	path = resources/red5/red5-plugins
 	url = https://github.com/Red5/red5-plugins.git
+[submodule "resources/ffmpeg_develop_doc"]
+	path = resources/ffmpeg_develop_doc
+	url = https://github.com/0voice/ffmpeg_develop_doc.git
+[submodule "resources/deepstream_reference_apps"]
+	path = resources/deepstream_reference_apps
+	url = https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps.git
+[submodule "resources/deepstream_python_apps"]
+	path = resources/deepstream_python_apps
+	url = https://github.com/NVIDIA-AI-IOT/deepstream_python_apps.git
+[submodule "resources/tlt-iva-examples"]
+	path = resources/tlt-iva-examples
+	url = https://github.com/NVIDIA-AI-IOT/tlt-iva-examples.git
+[submodule "resources/cuda-pcl"]
+	path = resources/cuda-pcl
+	url = https://github.com/NVIDIA-AI-IOT/cuda-pcl.git
+[submodule "resources/gst-python"]
+	path = resources/gst-python
+	url = https://github.com/GStreamer/gst-python.git
+[submodule "resources/dlstreamer"]
+	path = resources/dlstreamer
+	url = https://github.com/dlstreamer/dlstreamer.git

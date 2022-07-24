@@ -1,0 +1,9 @@
+package(default_visibility = ["//visibility:public"])
+
+cc_library(
+    name = "al_vl_feat",
+    srcs=glob(["*.c"]),
+    hdrs=glob(["*.h"]),
+    deps=["@vlfeat//:vlfeat"],
+    visibility = ["//visibility:public"]
+)
