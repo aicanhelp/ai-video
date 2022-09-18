@@ -5,12 +5,16 @@
 		},
 		{
 			"path": "resources/gstreamer"
+		},
+		{
+			"path": "content/gst-example"
 		}
 	],
 	"settings": {
 		"mesonbuild.configureOnOpen": true,
 		"files.associations": {
-			"gst.h": "c"
+			"gst.h": "c",
+			"cairoint.h": "c"
 		}
 	}
 }
