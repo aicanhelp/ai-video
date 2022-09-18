@@ -58,9 +58,6 @@
 [submodule "resources/srs/srs"]
 	path = resources/srs/srs
 	url = https://github.com/ossrs/srs
-[submodule "resources/srs/srs-docker"]
-	path = resources/srs/srs-docker
-	url = https://github.com/ossrs/srs-docker.git
 [submodule "resources/x264"]
 	path = resources/x264
 	url = https://github.com/mirror/x264
@@ -112,3 +109,6 @@
 [submodule "resources/dlstreamer"]
 	path = resources/dlstreamer
 	url = https://github.com/dlstreamer/dlstreamer.git
+[submodule "resources/gst-template"]
+	path = resources/gst-template
+	url = https://gitlab.freedesktop.org/gstreamer/gst-template.git

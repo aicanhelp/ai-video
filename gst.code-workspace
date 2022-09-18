@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "resources/gst-template"
+		},
+		{
+			"path": "resources/gstreamer"
+		}
+	],
+	"settings": {
+		"mesonbuild.configureOnOpen": true,
+		"files.associations": {
+			"gst.h": "c"
+		}
+	}
+}
