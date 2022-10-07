@@ -1,0 +1,7 @@
+/snap/clion/184/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/184/bin/ninja/linux/ninja -DCMAKE_C_COMPILER=gcc -G Ninja /home/modongsong/workspace/github-aican/ai-video/content/gst-example
+-- Checking for one of the modules 'gstreamer-pbutils-1.0'
+include: /usr/include/gstreamer-1.0;/usr/include/orc-0.4;/usr/include/gstreamer-1.0;/usr/include/x86_64-linux-gnu;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include /usr/include/libsoup-2.4;/usr/include/libxml2;/usr/include/libmount;/usr/include/blkid;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include /usr/include/json-glib-1.0;/usr/include/libmount;/usr/include/blkid;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+GST1_LIBRARIES json-glib-1.0;gio-2.0;gobject-2.0;glib-2.0;gstplay-1.0;gstvideo-1.0;gstbase-1.0;gstreamer-1.0;gobject-2.0;glib-2.0;gstaudio-1.0;gstbase-1.0;gstreamer-1.0;gobject-2.0;glib-2.0;soup-2.4;gmodule-2.0;gio-2.0;gobject-2.0;glib-2.0;/usr/lib/x86_64-linux-gnu/libm.so
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/modongsong/workspace/github-aican/ai-video/content/gst-example/cmake-build-debug

@@ -1,0 +1,340 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "examples",
+					"jsonFile" : "directory-examples-Debug-1c8b83b621b6ef38a245.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "examples",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				},
+				{
+					"build" : "network",
+					"jsonFile" : "directory-network-Debug-5de104fc96d9b5a94d96.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "network",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "webrtc",
+					"jsonFile" : "directory-webrtc-Debug-f6940c335d183c1a91a6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "webrtc",
+					"targetIndexes" : 
+					[
+						14,
+						22,
+						23,
+						24
+					]
+				},
+				{
+					"build" : "playback",
+					"jsonFile" : "directory-playback-Debug-0efb2899973f3fe20872.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "playback",
+					"targetIndexes" : 
+					[
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "gst-example",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-1::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-1-Debug-c1c57f353bd042780b0c.json",
+					"name" : "basic-tutorial-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-12::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-12-Debug-4cf015961bc9ebef2069.json",
+					"name" : "basic-tutorial-12",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-13::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-13-Debug-099f3821876d9024b7e7.json",
+					"name" : "basic-tutorial-13",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-15::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-15-Debug-8590b3f9fb4d6e30ef7a.json",
+					"name" : "basic-tutorial-15",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-2::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-2-Debug-ceba9d60d118f145a8de.json",
+					"name" : "basic-tutorial-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-3::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-3-Debug-87dd81862a0f895fb5ae.json",
+					"name" : "basic-tutorial-3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-4::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-4-Debug-085d95c19bf9e87f2a07.json",
+					"name" : "basic-tutorial-4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-5::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-5-Debug-df8e2be8e56af145dd3e.json",
+					"name" : "basic-tutorial-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-6::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-6-Debug-5d91c70d7464dc955c5f.json",
+					"name" : "basic-tutorial-6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-7::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-7-Debug-55f8d22cb3dc29914926.json",
+					"name" : "basic-tutorial-7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-8::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-8-Debug-723ce96a723c72f2a4e5.json",
+					"name" : "basic-tutorial-8",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "basic-tutorial-9::@714eac15f71a94114fdf",
+					"jsonFile" : "target-basic-tutorial-9-Debug-4d1d3d024cd9e4b0f9fa.json",
+					"name" : "basic-tutorial-9",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gst-player::@93d092938119231be33e",
+					"jsonFile" : "target-gst-player-Debug-ab2f2217f9bae3ee20b2.json",
+					"name" : "gst-player",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "http-launch::@39732e8ab9fc593479e7",
+					"jsonFile" : "target-http-launch-Debug-dd79cf7a1c3edfcd0fba.json",
+					"name" : "http-launch",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "multiparty-sendrecv::@25bb078d8aeb5057bea9",
+					"jsonFile" : "target-multiparty-sendrecv-Debug-83deb4bfaf461e4efbbe.json",
+					"name" : "multiparty-sendrecv",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "playback-tutorial-1::@714eac15f71a94114fdf",
+					"jsonFile" : "target-playback-tutorial-1-Debug-06be4d3c0dff7029ff3d.json",
+					"name" : "playback-tutorial-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "playback-tutorial-2::@714eac15f71a94114fdf",
+					"jsonFile" : "target-playback-tutorial-2-Debug-9780d2dc5413156092b3.json",
+					"name" : "playback-tutorial-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "playback-tutorial-3::@714eac15f71a94114fdf",
+					"jsonFile" : "target-playback-tutorial-3-Debug-0a18c611c6e4ede4960f.json",
+					"name" : "playback-tutorial-3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "playback-tutorial-4::@714eac15f71a94114fdf",
+					"jsonFile" : "target-playback-tutorial-4-Debug-67f7cb1574b064b07752.json",
+					"name" : "playback-tutorial-4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "playback-tutorial-5::@714eac15f71a94114fdf",
+					"jsonFile" : "target-playback-tutorial-5-Debug-a2c84eb0a1f02dda39df.json",
+					"name" : "playback-tutorial-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "playback-tutorial-6::@714eac15f71a94114fdf",
+					"jsonFile" : "target-playback-tutorial-6-Debug-17476e999ccd772cc852.json",
+					"name" : "playback-tutorial-6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "playback-tutorial-7::@714eac15f71a94114fdf",
+					"jsonFile" : "target-playback-tutorial-7-Debug-4e0a72ca8d852aa53516.json",
+					"name" : "playback-tutorial-7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "sendrecv::@25bb078d8aeb5057bea9",
+					"jsonFile" : "target-sendrecv-Debug-fd463dabdc46114cd3ce.json",
+					"name" : "sendrecv",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "webrtc-recvonly-h264::@25bb078d8aeb5057bea9",
+					"jsonFile" : "target-webrtc-recvonly-h264-Debug-1ca815fa962441041b0d.json",
+					"name" : "webrtc-recvonly-h264",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "webrtc-unidirectional-h264::@25bb078d8aeb5057bea9",
+					"jsonFile" : "target-webrtc-unidirectional-h264-Debug-dd0d221fb5757c319137.json",
+					"name" : "webrtc-unidirectional-h264",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/modongsong/workspace/github-aican/ai-video/content/gst-example/cmake-build-debug",
+		"source" : "/home/modongsong/workspace/github-aican/ai-video/content/gst-example"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
