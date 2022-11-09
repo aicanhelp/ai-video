@@ -89,7 +89,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+**/build-*-Debug/
+builddir
 # Spyder project settings
 .spyderproject
 .spyproject

@@ -12,23 +12,31 @@ pkg_search_module(JSON_GLIB REQUIRED json-glib-1.0)
 pkg_search_module(LIB_SOUP REQUIRED libsoup-2.4)
 
 find_library(M_LIB m)
+find_library(X11_LIB X11)
+find_library(GSTTAG_LIB gsttag-1.0)
 
-include_directories(${GTK_INCLUDE_DIRS})
-include_directories(${GDK_INCLUDE_DIRS})
-include_directories(${JSON_GLIB_INCLUDE_DIRS})
-include_directories(${LIB_SOUP_INCLUDE_DIRS})
-include_directories(${GST1_INCLUDE_DIRS})
-include_directories(${GST1_AUDIO_INCLUDE_DIRS})
-include_directories(${GST1_PBUTILS_INCLUDE_DIRS})
+include_directories(
+        ${GTK_INCLUDE_DIRS}
+        ${GDK_INCLUDE_DIRS}
+        ${JSON_GLIB_INCLUDE_DIRS}
+        ${LIB_SOUP_INCLUDE_DIRS}
+        ${GST1_INCLUDE_DIRS}
+        ${GST1_AUDIO_INCLUDE_DIRS}
+        ${GST1_PBUTILS_INCLUDE_DIRS}
+)
 
-link_libraries(${GTK_LIBRARIES})
-link_libraries(${GDK_LIBRARIES})
-link_libraries(${JSON_GLIB_LIBRARIES})
-link_libraries(${LIB_SOUP_LIBRARIES})
-link_libraries(${GST1_LIBRARIES})
-link_libraries(${GST1_AUDIO_LIBRARIES})
-link_libraries(${GST1_PBUTILS_LIBRARIES})
-link_libraries(${M_LIB})
+link_libraries(
+        ${GTK_LIBRARIES}
+        ${GDK_LIBRARIES}
+        ${JSON_GLIB_LIBRARIES}
+        ${LIB_SOUP_LIBRARIES}
+        ${GST1_LIBRARIES}
+        ${GST1_AUDIO_LIBRARIES}
+        ${GST1_PBUTILS_LIBRARIES}
+        ${M_LIB}
+        ${X11_LIB}
+        ${GSTTAG_LIB}
+)
 
 message("include: ${GST1_INCLUDE_DIRS} ${LIB_SOUP_INCLUDE_DIRS} ${JSON_GLIB_INCLUDE_DIRS}")
 message("GST1_LIBRARIES ${JSON_GLIB_LIBRARIES};${GST1_LIBRARIES};${GST1_AUDIO_LIBRARIES};${LIB_SOUP_LIBRARIES};${M_LIB}")

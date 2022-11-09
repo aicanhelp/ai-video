@@ -27,9 +27,9 @@
 G_BEGIN_DECLS
 
 typedef struct _GstPlayGtkVideoRenderer
-    GstPlayGtkVideoRenderer;
+        GstPlayGtkVideoRenderer;
 typedef struct _GstPlayGtkVideoRendererClass
-    GstPlayGtkVideoRendererClass;
+        GstPlayGtkVideoRendererClass;
 
 #define GST_TYPE_PLAY_GTK_VIDEO_RENDERER             (gst_player_gtk_video_renderer_get_type ())
 #define GST_IS_PLAY_GTK_VIDEO_RENDERER(obj)          (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GST_TYPE_PLAY_GTK_VIDEO_RENDERER))
@@ -39,10 +39,11 @@ typedef struct _GstPlayGtkVideoRendererClass
 #define GST_PLAY_GTK_VIDEO_RENDERER_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST ((klass), GST_TYPE_PLAY_GTK_VIDEO_RENDERER, GstPlayGtkVideoRendererClass))
 #define GST_PLAY_GTK_VIDEO_RENDERER_CAST(obj)        ((GstPlayGtkVideoRenderer*)(obj))
 
-GType gst_player_gtk_video_renderer_get_type (void);
+GType gst_player_gtk_video_renderer_get_type(void);
 
-GstPlayVideoRenderer * gst_play_gtk_video_renderer_new (void);
-GtkWidget * gst_play_gtk_video_renderer_get_widget (GstPlayGtkVideoRenderer * self);
+GstPlayVideoRenderer *gst_play_gtk_video_renderer_new(void);
+
+GtkWidget *gst_play_gtk_video_renderer_get_widget(GstPlayGtkVideoRenderer *self);
 
 G_END_DECLS
 

@@ -112,3 +112,6 @@
 [submodule "resources/gst-template"]
 	path = resources/gst-template
 	url = https://gitlab.freedesktop.org/gstreamer/gst-template.git
+[submodule "resources/QtAv"]
+	path = resources/QtAv
+	url = https://github.com/wang-bin/QtAV.git

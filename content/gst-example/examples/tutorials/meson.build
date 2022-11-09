@@ -9,7 +9,7 @@ executable('basic-tutorial-8', 'basic-tutorial-8.c', dependencies : [gst_dep, gi
 executable('basic-tutorial-9', 'basic-tutorial-9.c', dependencies : [gst_dep, gio_dep])
 executable('basic-tutorial-12', 'basic-tutorial-12.c', dependencies : [gst_dep, gio_dep])
 executable('basic-tutorial-13', 'basic-tutorial-13.c', dependencies : [gst_dep, gio_dep])
-executable('basic-tutorial-15', 'basic-tutorial-15.c', dependencies : [gst_dep, gio_dep])
+# executable('basic-tutorial-15', 'basic-tutorial-15.c', dependencies : [gst_dep, gio_dep])
 executable('playback-tutorial-1', 'playback-tutorial-1.c', dependencies : [gst_dep, gio_dep])
 executable('playback-tutorial-2', 'playback-tutorial-2.c', dependencies : [gst_dep, gio_dep])
 executable('playback-tutorial-3', 'playback-tutorial-3.c', dependencies : [gst_dep, gio_dep])

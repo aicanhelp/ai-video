@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 8.0.1, 2022-10-06T23:27:17. -->
+<!-- Written by QtCreator 8.0.2, 2022-11-09T22:46:49. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -80,32 +80,38 @@
     <valuelist type="QVariantList" key="ClangTools.SuppressedDiagnostics"/>
     <value type="bool" key="ClangTools.UseGlobalSettings">true</value>
    </valuemap>
-   <valuemap type="QVariantMap" key="CppEditor.QuickFix">
-    <value type="bool" key="UseGlobalSettings">true</value>
-   </valuemap>
   </valuemap>
  </data>
  <data>
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{c19ff911-4878-4d19-9629-dad540469edd}</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">2</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 6.4.0 GCC 64bit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 6.4.0 GCC 64bit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt6.640.gcc_64_kit</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
-    <value type="QString" key="MesonProjectManager.BuildConfig.Parameters"></value>
-    <value type="QString" key="MesonProjectManager.BuildConfig.Type">debug</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/modongsong/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debug</value>
+    <value type="QString" key="CMake.Build.Type">Debug</value>
+    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_GENERATOR:STRING=Ninja
+-DCMAKE_BUILD_TYPE:STRING=Debug
+-DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{IDE:ResourcePath}/package-manager/auto-setup.cmake
+-DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
+-DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
+-DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
+-DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
+-DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
+    <value type="int" key="EnableQmlDebugging">0</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="MesonProjectManager.BuildStep.AdditionalArguments"></value>
-      <value type="QString" key="MesonProjectManager.BuildStep.BuildTargets">all</value>
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">all</value>
+      </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildStep</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
@@ -114,11 +120,12 @@
     </valuemap>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="MesonProjectManager.BuildStep.AdditionalArguments"></value>
-      <value type="QString" key="MesonProjectManager.BuildStep.BuildTargets">clean</value>
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">clean</value>
+      </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildStep</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
@@ -131,18 +138,26 @@
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildConfiguration</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="MesonProjectManager.BuildConfig.Parameters"></value>
-    <value type="QString" key="MesonProjectManager.BuildConfig.Type">release</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/modongsong/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-release</value>
+    <value type="QString" key="CMake.Build.Type">Release</value>
+    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_GENERATOR:STRING=Ninja
+-DCMAKE_BUILD_TYPE:STRING=Release
+-DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{IDE:ResourcePath}/package-manager/auto-setup.cmake
+-DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
+-DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
+-DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
+-DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
+-DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="MesonProjectManager.BuildStep.AdditionalArguments"></value>
-      <value type="QString" key="MesonProjectManager.BuildStep.BuildTargets">all</value>
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">all</value>
+      </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildStep</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
@@ -151,10 +166,11 @@
     </valuemap>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="MesonProjectManager.BuildStep.AdditionalArguments"></value>
-      <value type="QString" key="MesonProjectManager.BuildStep.BuildTargets">clean</value>
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">clean</value>
+      </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildStep</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
@@ -167,19 +183,26 @@
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildConfiguration</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
-    <value type="QString" key="MesonProjectManager.BuildConfig.Parameters"></value>
-    <value type="QString" key="MesonProjectManager.BuildConfig.Type">debugoptimized</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/modongsong/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized</value>
+    <value type="QString" key="CMake.Build.Type">RelWithDebInfo</value>
+    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_GENERATOR:STRING=Ninja
+-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
+-DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{IDE:ResourcePath}/package-manager/auto-setup.cmake
+-DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
+-DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
+-DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
+-DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
+-DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-RelWithDebInfo</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="MesonProjectManager.BuildStep.AdditionalArguments"></value>
-      <value type="QString" key="MesonProjectManager.BuildStep.BuildTargets">all</value>
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">all</value>
+      </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildStep</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
@@ -188,11 +211,11 @@
     </valuemap>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="MesonProjectManager.BuildStep.AdditionalArguments"></value>
-      <value type="QString" key="MesonProjectManager.BuildStep.BuildTargets">clean</value>
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">clean</value>
+      </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildStep</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
@@ -204,20 +227,28 @@
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Debug With Optimizations</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildConfiguration</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Release with Debug Information</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.3">
-    <value type="QString" key="MesonProjectManager.BuildConfig.Parameters"></value>
-    <value type="QString" key="MesonProjectManager.BuildConfig.Type">minsize</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/modongsong/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-minsize</value>
+    <value type="QString" key="CMake.Build.Type">RelWithDebInfo</value>
+    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_GENERATOR:STRING=Ninja
+-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
+-DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{IDE:ResourcePath}/package-manager/auto-setup.cmake
+-DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
+-DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
+-DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
+-DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
+-DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
+    <value type="int" key="EnableQmlDebugging">0</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Profile</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="MesonProjectManager.BuildStep.AdditionalArguments"></value>
-      <value type="QString" key="MesonProjectManager.BuildStep.BuildTargets">all</value>
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">all</value>
+      </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildStep</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
@@ -226,11 +257,11 @@
     </valuemap>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
-      <value type="QString" key="MesonProjectManager.BuildStep.AdditionalArguments"></value>
-      <value type="QString" key="MesonProjectManager.BuildStep.BuildTargets">clean</value>
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">clean</value>
+      </valuelist>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
-      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildStep</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
      </valuemap>
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
@@ -242,10 +273,55 @@
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Minimum Size</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.BuildConfiguration</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Profile</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
    </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.BuildConfigurationCount">4</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.4">
+    <value type="QString" key="CMake.Build.Type">MinSizeRel</value>
+    <value type="QString" key="CMake.Initial.Parameters">-DCMAKE_GENERATOR:STRING=Ninja
+-DCMAKE_BUILD_TYPE:STRING=MinSizeRel
+-DCMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=%{IDE:ResourcePath}/package-manager/auto-setup.cmake
+-DQT_QMAKE_EXECUTABLE:FILEPATH=%{Qt:qmakeExecutable}
+-DCMAKE_PREFIX_PATH:PATH=%{Qt:QT_INSTALL_PREFIX}
+-DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
+-DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
+-DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-MinSizeRel</value>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">all</value>
+      </valuelist>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Build</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Build</value>
+    </valuemap>
+    <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.1">
+     <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
+      <valuelist type="QVariantList" key="CMakeProjectManager.MakeStep.BuildTargets">
+       <value type="QString">clean</value>
+      </valuelist>
+      <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
+      <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.MakeStep</value>
+     </valuemap>
+     <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">1</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clean</value>
+     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.BuildSteps.Clean</value>
+    </valuemap>
+    <value type="int" key="ProjectExplorer.BuildConfiguration.BuildStepListCount">2</value>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ClearSystemEnvironment">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
+    <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
+    <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Minimum Size Release</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeBuildConfiguration</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.BuildConfigurationCount">5</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.DeployConfiguration.0">
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <value type="qlonglong" key="ProjectExplorer.BuildStepList.StepsCount">0</value>
@@ -266,15 +342,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">gst-play</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/playback/player/gst-play/gst-play</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/playback/player/gst-play/gst-play</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-1</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-1</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-1</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/playback/player/gst-play</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -283,15 +359,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">gtk-play</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/playback/player/gtk/gtk-play</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/playback/player/gtk/gtk-play</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-12</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-12</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-12</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/playback/player/gtk</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.10">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -300,15 +376,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-3</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-3</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-3</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-9</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-9</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-9</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.11">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -317,15 +393,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-4</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-4</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-4</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">gst-player</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.gst-player</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">gst-player</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/playback</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.12">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -334,15 +410,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-5</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-5</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-5</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">gtk-player</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.gtk-player</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">gtk-player</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/playback</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.13">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -351,15 +427,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-6</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-6</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-6</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">http-launch</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.http-launch</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">http-launch</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/network</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.14">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -368,15 +444,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-7</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-7</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-7</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">multiparty-sendrecv</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.multiparty-sendrecv</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">multiparty-sendrecv</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/webrtc</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.15">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -385,15 +461,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-8</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-8</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-8</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-1</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.playback-tutorial-1</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">playback-tutorial-1</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.16">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -402,15 +478,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-9</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-9</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-9</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.playback-tutorial-2</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">playback-tutorial-2</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.17">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -419,15 +495,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-12</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-12</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-12</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-3</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.playback-tutorial-3</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">playback-tutorial-3</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.18">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -436,15 +512,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-13</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-13</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-13</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-4</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.playback-tutorial-4</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">playback-tutorial-4</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.19">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -453,15 +529,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-15</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-15</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-15</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-5</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.playback-tutorial-5</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">playback-tutorial-5</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -470,15 +546,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">http-launch</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/network/http-launch/http-launch</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/network/http-launch/http-launch</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-13</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-13</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-13</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/network/http-launch</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.20">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -487,15 +563,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-1</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-1</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-1</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-6</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.playback-tutorial-6</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">playback-tutorial-6</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.21">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -504,15 +580,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-2</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-7</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.playback-tutorial-7</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">playback-tutorial-7</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.22">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -521,15 +597,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-3</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-3</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-3</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">sendrecv</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.sendrecv</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">sendrecv</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/webrtc</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.23">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -538,15 +614,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-4</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-4</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-4</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">webrtc-recvonly-h264</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.webrtc-recvonly-h264</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">webrtc-recvonly-h264</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/webrtc</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.24">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -555,49 +631,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-5</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-5</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-5</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">webrtc-unidirectional-h264</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.webrtc-unidirectional-h264</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">webrtc-unidirectional-h264</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.25">
-    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
-    <valuelist type="QVariantList" key="CustomOutputParsers"/>
-    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
-    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-6</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-6</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-6</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
-   </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.26">
-    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
-    <valuelist type="QVariantList" key="CustomOutputParsers"/>
-    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
-    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">playback-tutorial-7</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-7</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/playback-tutorial-7</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/webrtc</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.3">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -606,15 +648,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">mp-webrtc-sendrecv</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/webrtc/multiparty-sendrecv/gst/mp-webrtc-sendrecv</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/webrtc/multiparty-sendrecv/gst/mp-webrtc-sendrecv</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-2</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-2</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/webrtc/multiparty-sendrecv/gst</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.4">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -623,15 +665,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">webrtc-recvonly-h264</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/webrtc/sendonly/webrtc-recvonly-h264</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/webrtc/sendonly/webrtc-recvonly-h264</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-3</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-3</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-3</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/webrtc/sendonly</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.5">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -640,15 +682,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">webrtc-unidirectional-h264</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/webrtc/sendonly/webrtc-unidirectional-h264</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/webrtc/sendonly/webrtc-unidirectional-h264</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-4</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-4</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-4</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/webrtc/sendonly</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.6">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -657,15 +699,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">webrtc-sendrecv</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/webrtc/sendrecv/gst/webrtc-sendrecv</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/webrtc/sendrecv/gst/webrtc-sendrecv</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-5</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-5</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-5</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/webrtc/sendrecv/gst</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.7">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -674,15 +716,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">bus_example</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/bus_example</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/bus_example</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-6</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-6</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-6</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.8">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -691,15 +733,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-1</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-1</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-1</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-7</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-7</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-7</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.9">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -708,17 +750,17 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MesonProjectManager.MesonRunConfiguration/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-2</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/media/modongsong/data/workspace/github-aican/ai-video/content/gst-example/examples/tutorials/basic-tutorial-2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">basic-tutorial-8</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">CMakeProjectManager.CMakeRunConfiguration.basic-tutorial-8</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">basic-tutorial-8</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/media/modongsong/data/workspace/github-aican/ai-video/resources/build-gst-example-Desktop-debugoptimized/examples/tutorials</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/modongsong/workspace/github-aican/ai-video/content/build-gst-example-Desktop_Qt_6_4_0_GCC_64bit-Debug/examples</value>
    </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">27</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">25</value>
   </valuemap>
  </data>
  <data>
