@@ -115,3 +115,6 @@
 [submodule "resources/QtAv"]
 	path = resources/QtAv
 	url = https://github.com/wang-bin/QtAV.git
+[submodule "resources/lossless-cut"]
+	path = resources/lossless-cut
+	url = https://github.com/mifi/lossless-cut.git
