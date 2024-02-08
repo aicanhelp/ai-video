@@ -1,5 +1,6 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.23)
 project(gst-example)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 find_package(PkgConfig REQUIRED)
 
@@ -40,6 +41,9 @@ link_libraries(
 
 message("include: ${GST1_INCLUDE_DIRS} ${LIB_SOUP_INCLUDE_DIRS} ${JSON_GLIB_INCLUDE_DIRS}")
 message("GST1_LIBRARIES ${JSON_GLIB_LIBRARIES};${GST1_LIBRARIES};${GST1_AUDIO_LIBRARIES};${LIB_SOUP_LIBRARIES};${M_LIB}")
+
+set(ENV{LIBVA_DRIVER_NAME} "nvidia")
+set(ENV{LIBVA_DRIVERS_PATH} "/snap/vlc/3078/usr/lib/x86_64-linux-gnu/dri")
 
 add_subdirectory(examples)
 add_subdirectory(network)

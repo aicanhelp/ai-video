@@ -49,9 +49,12 @@ main(int argc, char *argv[]) {
         return -1;
     }
 
+    gchar *file1="https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_cropped_multilingual.webm";
+    gchar *file2="file:////home/modongsong/data/test-data/sintel_cropped_multilingual.webm";
+
     /* Set the URI to play */
     g_object_set(data.playbin, "uri",
-                 "https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_cropped_multilingual.webm",
+                 file1,
                  NULL);
 
     /* Set flags to show Audio and Video but ignore Subtitles */

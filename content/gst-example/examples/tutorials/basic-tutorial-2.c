@@ -1,8 +1,11 @@
 #include <gst/gst.h>
 
+
+
 int
 main(int argc, char *argv[]) {
     GstElement *pipeline, *source, *sink;
+
     GstBus *bus;
     GstMessage *msg;
     GstStateChangeReturn ret;

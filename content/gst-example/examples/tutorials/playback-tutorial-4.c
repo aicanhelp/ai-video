@@ -132,11 +132,12 @@ main(int argc, char *argv[]) {
     memset(&data, 0, sizeof(data));
     data.buffering_level = 100;
 
+    gchar *file1="playbin uri=https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm";
+    gchar *file2="playbin uri=file:////home/modongsong/data/test-data/sintel_trailer-480p.webm";
+
     /* Build the pipeline */
     pipeline =
-            gst_parse_launch
-                    ("playbin uri=https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm",
-                     NULL);
+            gst_parse_launch(file2,NULL);
     bus = gst_element_get_bus(pipeline);
 
     /* Set the download flag */

@@ -1,4 +1,4 @@
-
+cmake_minimum_required(VERSION 3.23)
 message("DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
 
 file(GLOB_RECURSE RESOURCE_UI LIST_DIRECTORIES false RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}/player/gtk/resources "*.ui")

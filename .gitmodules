@@ -118,3 +118,9 @@
 [submodule "resources/lossless-cut"]
 	path = resources/lossless-cut
 	url = https://github.com/mifi/lossless-cut.git
+[submodule "resources/VideoProcessingFramework"]
+	path = resources/VideoProcessingFramework
+	url = https://github.com/NVIDIA/VideoProcessingFramework.git
+[submodule "resources/analysis-avp"]
+	path = resources/analysis-avp
+	url = https://github.com/gongluck/AnalysisAVP.git

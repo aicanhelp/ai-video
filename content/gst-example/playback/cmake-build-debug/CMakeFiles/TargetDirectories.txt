@@ -1,3 +1,0 @@
-/home/modongsong/workspace/github-aican/ai-video/content/gst-example/playback/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/modongsong/workspace/github-aican/ai-video/content/gst-example/playback/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/modongsong/workspace/github-aican/ai-video/content/gst-example/playback/cmake-build-debug/CMakeFiles/gst-player.dir
